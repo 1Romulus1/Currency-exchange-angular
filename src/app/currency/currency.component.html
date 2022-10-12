@@ -1,0 +1,4 @@
+<div *ngFor="let item of data?.rates | keyvalue">
+  <div>{{ item.key }}</div>
+  <div>{{ item.value | currency:'UAH'}}</div>
+</div>

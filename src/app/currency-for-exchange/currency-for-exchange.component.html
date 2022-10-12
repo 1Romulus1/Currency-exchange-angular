@@ -1,0 +1,7 @@
+<select [(ngModel)]="fromCurrency">
+  <option *ngFor="let currency of currencyOption">{{ currency }}</option>
+</select>
+<select [(ngModel)]="toCurrency">
+  <option *ngFor="let currency of currencyOption">{{ currency }}</option>
+</select>
+<div>{{ resultAfterExchange?.result | currency }}</div>
